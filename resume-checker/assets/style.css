@@ -1,0 +1,98 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white !important;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Score Card */
+.score-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.score-label {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.score-value {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #764ba2;
+    line-height: 1;
+}
+
+/* Keyword Badges */
+.keyword-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.keyword-badge {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #ffcdd2;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #764ba2 !important;
+    color: white !important;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    background-color: #5a3780 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.stTextArea textarea {
+    border-radius: 8px;
+    border-color: #e0e0e0;
+}
+
+.stTextArea textarea:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 1px #764ba2;
+}

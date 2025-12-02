@@ -1,0 +1,7 @@
+.venv
+__pycache__
+*.pyc
+.git
+.gitignore
+debug_scoring.py
+debug_output.txt
