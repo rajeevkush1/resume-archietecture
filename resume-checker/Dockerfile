@@ -13,16 +13,28 @@ COPY requirements.txt .
 
 # Increase pip timeout and install in stages to handle large downloads
 # Install PyTorch and large dependencies first with extended timeout
-RUN pip install --no-cache-dir --timeout=1000 \
+# RUN pip install --no-cache-dir --timeout=1000 \
+#     torch \
+#     sentence-transformers \
+#     && pip install --no-cache-dir --timeout=1000 \
+#     streamlit \
+#     scikit-learn \
+#     && pip install --no-cache-dir --timeout=1000 \
+#     pdfminer.six \
+#     spacy \
+#     numpy
+
+RUN pip install --no-cache-dir \
     torch \
     sentence-transformers \
-    && pip install --no-cache-dir --timeout=1000 \
+    && pip install --no-cache-dir \
     streamlit \
     scikit-learn \
-    && pip install --no-cache-dir --timeout=1000 \
+    && pip install --no-cache-dir \
     pdfminer.six \
     spacy \
     numpy
+
 
 # Install spacy model
 RUN pip install --no-cache-dir \
